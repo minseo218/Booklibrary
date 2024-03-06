@@ -33,7 +33,12 @@ spring:
       password: 1111
       driver-class-name: org.mariadb.jdbc.Driver
       url: jdbc:mysql://localhost:3306/booksystem?characterEncoding=utf8
-
+      
+   # Hibernate Dialect 설정 추가
+   jpa:
+     properties:
+       hibernate:
+         dialect: org.hibernate.dialect.MariaDBDialect
 ---
 
 #mybatis
